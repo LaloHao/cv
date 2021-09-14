@@ -20,6 +20,7 @@ in pkgs.stdenv.mkDerivation {
     doom-emacs
     altacv
     pkgs.git
+    pkgs.gh
   ];
 
   # unpackPhase = ":";

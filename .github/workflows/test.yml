@@ -13,4 +13,5 @@ jobs:
     - run: |
         nix-build
         export TIMESTAMP=$(date +%Y%m%dT%H%M%S)
+        gh auth login --with-token <<<${{ secrets.GITHUB_TOKEN }}
         gh release create $TIMESTAMP result/cv.pdf result/cv_en.pdf
