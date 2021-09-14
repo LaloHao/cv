@@ -1,0 +1,237 @@
+#+TITLE: Curriculum Vitae
+#+OPTIONS: toc:nil title:nil H:1
+
+#+LATEX_CLASS: altacv
+#+LATEX_HEADER: \usepackage[rm]{roboto}
+#+LATEX_HEADER: \usepackage[defaultsans]{lato}
+#+LATEX_HEADER: \usepackage{paracol}
+#+LATEX_HEADER: \columnratio{0.6} % Set the left/right column width ratio to 6:4.
+#+MACRO: cvevent \cvevent{$1}{$2}{$3}{$4}
+#+MACRO: cvachievement \cvachievement{$1}{$2}{$3}{$4}
+#+MACRO: cvtag \cvtag{$1}
+#+MACRO: divider \divider
+#+MACRO: divider2 \par\divider
+#+MACRO: cvskill \cvskill{$1}{$2}
+
+* Informacion personal :ignore:
+** Photo & Tagline :ignore:
+#+begin_export latex
+\name{Eduardo Vazquez}
+\photoR{2.8cm}{updated-profile.png}
+\tagline{Ingeniero de software}
+#+end_export
+** Personal Info :ignore:
+#+begin_export latex
+\personalinfo{%
+  \homepage{www.hao.systems}
+  \email{lalo@hao.systems}
+  \email{lalohao@gmail.com}
+  \phone{+523312071513}
+  \location{Mazatlan, MX}
+  \github{lalohao}
+  \linkedin{lalohao}
+}
+\makecvheader
+#+end_export
+
+{{{divider2}}}
+
+* Izquierda :ignore:
+#+begin_export latex
+\begin{paracol}{2}
+#+end_export
+** Experiencia
+*** Servfix :ignore:
+{{{cvevent(Ingeniero de software, Servfix, ene 2021 -- mar 2021, Mazatlan\, Sin)}}}
+{{{divider2}}}
+
+*** Agave :ignore:
+{{{cvevent(Ingeniero de software, Agave Lab, oct 2018 -- nov 2019, Guadalajara\, Jal)}}}
+
+Transicioné el sistema de CI/CD de Travis a CircleCI reduciendo costos de
+operacion; entre las tareas realizadas:
++ Apliqué pipelines para separar el ambiente de producción y desarrollo, creando
+  un sistema de release con 1 click que solo podia ser aprobado por QA
++ Detecté bugs y /code smells/ con analisis estático de codigo.
++ Quité la necesidad de usar instancias de docker en el frontend, utilizando en
+  cambio un CDN cacheado para optimizar la carga del sitio
+
+{{{cvtag(devops)}}}
+{{{cvtag(frontend)}}}
+{{{cvtag(backend)}}}
+{{{cvtag(qa)}}}
+
+{{{cvtag(aws)}}}
+{{{cvtag(s3)}}}
+{{{cvtag(cloudfront)}}}
+{{{cvtag(sonarqube)}}}
+
+{{{divider2}}}
+*** Coophi :ignore:
+{{{cvevent(Ingeniero de frontend, Coophi, jul 2018 -- oct 2018, Remoto)}}}
+
+- Diseñé componentes modulares y de orden superior utilizando preprocesadores de
+  estilos.
+
+{{{cvtag(frontend)}}}
+{{{cvtag(google cloud)}}}
+
+{{{divider2}}}
+*** Kukumi :ignore:
+{{{cvevent(Desarrollador movil, Kukumi, may 2017 -- may 2018, Guadalajara\, Jal)}}}
+{{{cvtag(nodejs)}}}
+{{{cvtag(angular)}}}
+{{{cvtag(mongodb)}}}
+{{{cvtag(react native)}}}
+{{{cvtag(real time)}}}
+{{{cvtag(offline first)}}}
+
+{{{divider2}}}
+*** Coparmex :ignore:
+{{{cvevent(Programador, Coparmex, ene 2017 -- jun 2017, Guadalajara\, Jal)}}}
+{{{cvtag(delphi)}}}
+{{{cvtag(xamarin)}}}
+{{{cvtag(react native)}}}
+{{{cvtag(nodejs)}}}
+{{{cvtag(mysql)}}}
+
+* Derecha :ignore:
+#+begin_export latex
+\switchcolumn
+#+end_export
+#+begin_quote
+"Live in the future, then build what's missing." - Paul Graham
+#+end_quote
+
+** Idiomas
+{{{cvskill(Español, 5)}}}
+{{{cvskill(Ingles, 4)}}}
+
+** Educacion
+{{{cvevent(Ingenieria en comunicaciones y electronica,,, Universidad de Guadalajara)}}}
+{{{cvevent(Tecnico en Informatica,,, ITESUS)}}}
+
+** Skills
+{{{cvtag(scripting)}}}
+{{{cvtag(virtualization)}}}
+{{{cvtag(critical thinking)}}}
+{{{cvtag(sysadmin)}}}
+{{{cvtag(versioning)}}}
+{{{cvtag(metaprogramming)}}}
+{{{cvtag(site management)}}}
+{{{cvtag(devops)}}}
+
+** Lenguajes
+- Javascript (ES6+)
+- Typescript
+- Bash
+- Lisp
+- Haskell
+
+** Logros
+{{{cvachievement(\faTrophy, Medalla de oro Proyecto Multimedia 2013., Preparador de bebidas inteligente, )}}}
+
+\end{paracol}
+\newpage
+\begin{paracol}{2}
+* Skills in depth
+\vspace*{10px}
+\color{heading}{\cvsectionfont Frontend}\\
+{{{divider2}}}
+** Frameworks :ignore:
+{{{cvevent(,Frameworks)}}}
+- react / native
+- angular
+- vue
+  
+** UI/UX Design :ignore:
+{{{cvevent(,UI/UX Design)}}}
+- Sketch
+- Figma
+- Zepplin
+
+** Styling :ignore:
+{{{cvevent(,Styling)}}}
+- Styled components
+- Classnames
+- CSS
+- SASS
+
+** State management :ignore:
+{{{cvevent(,State management)}}}
+- mobx  (global)
+- redux (global)
+- hooks (local/global)
+
+** Persistence :ignore:
+{{{cvevent(,Persistence)}}}
+- local storage (browser)
+- sqlite (android)
+
+** Pure :ignore:
+{{{cvevent(,Pure)}}}
+- HTML
+- CSS
+- Javascript (Vanilla)
+
+\newpage
+\switchcolumn
+* Metaprogramming :ignore:
+\vspace*{25px}
+\color{heading}{\cvsectionfont Metaprogramming}\\
+{{{divider2}}}
+\vspace*{5px}
+- Template Haskell
+- Lisp macros
+- Makefiles
+- BabelJS
+
+\vspace*{10px}
+* Literate programming :ignore:
+\color{heading}{\cvsectionfont Literate programming}\\
+{{{divider2}}}
+\vspace*{5px}
+- Org mode
+- Literate Haskell
+
+\vspace*{10px}
+* Backend :ignore:
+\color{heading}{\cvsectionfont Backend}\\
+{{{divider2}}}
+** Persistence :ignore:
+{{{cvevent(,Persistence)}}}
+- MySQL
+- MongoDB
+** Transport :ignore:
+{{{cvevent(,Transport)}}}
+- HTTP
+- GraphQL
+- WebSockets
+** ORMs :ignore:
+{{{cvevent(,ORMs)}}}
+- Sequelize
+** Frameworks :ignore:
+{{{cvevent(,Frameworks)}}}
+- Express
+** Authentication :ignore:
+{{{cvevent(,Authentication)}}}
+- JWT
+- Session (PHP)
+
+\end{paracol}
+
+* Pkgs :ignore:
+#+begin_src emacs-lisp :exports none
+(require 'ox-extra)
+(ox-extras-activate '(latex-header-blocks ignore-headlines))
+(setq org-latex-default-packages-alist
+      '(("rm" "roboto"  t)
+        ("defaultsans" "lato" t)
+        ("" "paracol" t)
+        ))
+#+end_src
+
+#+RESULTS:
+| rm          | roboto  | t |
+| defaultsans | lato    | t |
+|             | paracol | t |
