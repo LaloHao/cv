@@ -1,4 +1,117 @@
 
+* Overview
+You can preview the compiled CV on the [[https://github.com/LaloHao/cv/releases][releases section]].
+
+For example:
++ [[https://github.com/LaloHao/cv/releases/download/20210914T155502/cv.pdf][Here (spanish)]]
++ [[https://github.com/LaloHao/cv/releases/download/20210914T155502/cv_en.pdf][And here (english)]]
+
+The repository contains a =github action= that builds the document(s) using
+=nix=. See [[file:.github/workflows/test.yml]]
+
+You can of course use emacs or =doom-emacs= and build the document locally (on
+your computer), for that, the minimal (emacs) packages needed are mentioned in
+[[file:doom.d/packages.el]], as well as a suggested configuration in
+[[file:doom.d/config.el]]
+
+You also need a latex environment.
+
+If you are using nix, all of these nonsense can be skipped with one command:
+
+#+begin_src shell :exports both :wrap src shell
+nix-build
+#+end_src
+
+#+RESULTS:
+#+begin_src shell
+these derivations will be built:
+  /nix/store/ilbcp04vmq7bbjrwrmyysjkj7k53wvva-cv.drv
+building '/nix/store/ilbcp04vmq7bbjrwrmyysjkj7k53wvva-cv.drv'...
+unpacking sources
+unpacking source archive /nix/store/mia5c5y2ccagqr9yi1lp8xdl1158hq8q-cv
+source root is cv
+patching sources
+configuring
+no configure script, doing nothing
+building
+Debug on Error enabled globally
+Loading /nix/store/kgjj008zh89krphvc0barh3k413xjm66-emacs-packages-deps/share/emacs/site-lisp/default.el (source)...
+doom-emacs is not placed in `doom-private-dir',
+loading from `site-lisp'
+Loading /nix/store/3zha8pw3w7dkckckkfbyasn6hhbqglm3-doom-emacs/early-init.el (source)...
+Loading /nix/store/3zha8pw3w7dkckckkfbyasn6hhbqglm3-doom-emacs/init.el (source)...
+Loading /nix/store/ygawawg9bxlfnhhngqzvr5pnblvfc1wl-doom-private/config.el (source)...
+Loading /nix/store/06vr94plrxm4qzci1407pkjr40fjnk97-doom-private/config.extra.el (source)...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/repos/magit/magit-version.el (source)...
+Tangled 1 code block from README.org
+Automatic display of crossref information was turned on
+Applying style hooks...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/inputenc.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/fontenc.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/graphicx.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/longtable.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/wrapfig.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/ulem.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/amsmath.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/amstext.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/amsbsy.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/amsopn.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/textcomp.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/amssymb.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/amsfonts.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/hyperref.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/url.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/nameref.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/paracol.elc...
+Loading /nix/store/lprljklllhqzwjpl95dw0l8vndbslxhg-straight-emacs-env/straight/build-27.2/auctex/style/ragged2e.elc...
+Applying style hooks...done
+Processing LaTeX file cv.tex...
+PDF file produced.
+Applying style hooks...
+Applying style hooks...done
+Processing LaTeX file cv_en.tex...
+PDF file produced.
+Directory `/build/tmp.xEBfj8bkAs/.cache/doom/' does not exist; create? (y or n) Warning (emacs): recentf mode: Error reading from stdin
+Cleaning up the recentf list...
+Cleaning up the recentf list...done (0 removed)
+installing
+post-installation fixup
+shrinking RPATHs of ELF executables and libraries in /nix/store/9pmq1fy6z1fs4l6cns2lxbycqw0i10sy-cv
+strip is /nix/store/v8imx1nvyz0hgvx9cbcmh6gp4ngw3ffj-binutils-2.35.1/bin/strip
+patching script interpreter paths in /nix/store/9pmq1fy6z1fs4l6cns2lxbycqw0i10sy-cv
+checking for references to /build/ in /nix/store/9pmq1fy6z1fs4l6cns2lxbycqw0i10sy-cv...
+/nix/store/9pmq1fy6z1fs4l6cns2lxbycqw0i10sy-cv
+#+end_src
+
+Output gets written to a =result= folder:
+#+begin_src shell :exports both :wrap src shell :results output
+ls -la result/
+#+end_src
+
+#+RESULTS:
+#+begin_src shell
+total 18268
+dr-xr-xr-x     2 root root       4096 Dec 31  1969 .
+drwxrwxr-t 19080 root nixbld 18092032 Sep 14 20:24 ..
+-r--r--r--     1 root root     289137 Dec 31  1969 cv_en.pdf
+-r--r--r--     1 root root     291414 Dec 31  1969 cv.pdf
+#+end_src
+
+Which itself points to the =nix-store= where the magic happens.
+#+begin_src shell :exports both :wrap src shell :results output
+file result
+#+end_src
+
+#+RESULTS:
+#+begin_src shell
+result: symbolic link to /nix/store/9pmq1fy6z1fs4l6cns2lxbycqw0i10sy-cv
+#+end_src
+
+*Please see Nix and NixOS for more information.*
+
+** References
+https://nixos.org/
+
 * Setup
 ** \LaTeX stuff
 /Probably/ clone the =altacv.cls= class to a path where =pdflatex= can find it,

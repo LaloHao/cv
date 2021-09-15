@@ -35,7 +35,6 @@ in pkgs.stdenv.mkDerivation {
       -l setup.el \
       cv.org     -f org-latex-export-to-pdf \
       cv_en.org  -f org-latex-export-to-pdf
-    ls -l
   '';
 
   installPhase = ''
