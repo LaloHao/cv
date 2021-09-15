@@ -9,7 +9,7 @@ For example:
 + [[https://github.com/LaloHao/cv/releases/download/20210914T155502/cv_en.pdf][And here (english)]]
 
 The repository contains a =github action= that builds the document(s) using
-=nix=. See [[file:.github/workflows/test.yml]]
+=nix=. See [[file:.github/workflows/build.yml]]
 
 You can of course use emacs or =doom-emacs= and build the document locally (on
 your computer), for that, the minimal (emacs) packages needed are mentioned in
