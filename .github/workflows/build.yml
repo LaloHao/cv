@@ -10,6 +10,10 @@ jobs:
     - uses: cachix/install-nix-action@v13
       with:
         nix_path: nixpkgs=https://github.com/NixOS/nixpkgs/archive/21c937f8cb1.tar.gz
+    - uses: cachix/cachix-action@v10
+      with:
+        name: hao-cv
+        authToken: '${{ secrets.CACHIX_AUTH_TOKEN }}'
     - run: |
         nix-build
         export TIMESTAMP=$(date +%Y%m%dT%H%M%S)
