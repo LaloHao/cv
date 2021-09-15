@@ -1,3 +1,5 @@
+* Build Status
+[[https://github.com/LaloHao/cv/actions][https://github.com/LaloHao/cv/actions/workflows/build.yml/badge.svg]]
 
 * Overview
 You can preview the compiled CV on the [[https://github.com/LaloHao/cv/releases][releases section]].
