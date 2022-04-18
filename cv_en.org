@@ -25,6 +25,7 @@
 \personalinfo{%
   \homepage{www.hao.systems}
   \email{lalo@hao.systems}
+  \email{lalohao@gmail.com}
   \phone{+523312071513}
   \location{Mazatlan, MX}
   \github{lalohao}
