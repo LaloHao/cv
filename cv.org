@@ -23,8 +23,6 @@
 ** Personal Info :ignore:
 #+begin_export latex
 \personalinfo{%
-  \homepage{www.hao.systems}
-  \email{lalo@hao.systems}
   \email{lalohao@gmail.com}
   \phone{+523312071513}
   \location{Mazatlan, MX}
@@ -41,8 +39,21 @@
 \begin{paracol}{2}
 #+end_export
 ** Experiencia
-*** Servfix :ignore:
-{{{cvevent(Ingeniero de software, Servfix, ene 2021 -- mar 2021, Mazatlan\, Sin)}}}
+*** Venafi :ignore:
+{{{cvevent(R\&D DevOps Engineer, Venafi, may 2022 -- actual, Remoto)}}}
+
+- Desarrollé microservicios y UIs de última generación utilizando
+  Golang, GraphQL, React y Kubernetes.
+- Automaticé pipelines usando Gitlab, Ansible y Terraform
+- Construí integraciones con AWS, GCP, Azure y CyberArk
+
+{{{cvtag(devops)}}}
+{{{cvtag(frontend)}}}
+{{{cvtag(backend)}}}
+
+{{{cvtag(kubernetes)}}}
+{{{cvtag(tls certificate management)}}}
+
 {{{divider2}}}
 
 *** Agave :ignore:
@@ -106,6 +117,7 @@ operacion; entre las tareas realizadas:
 ** Idiomas
 {{{cvskill(Español, 5)}}}
 {{{cvskill(Ingles, 4)}}}
+{{{cvskill(Japones, 1)}}}
 
 ** Educacion
 {{{cvevent(Ingenieria en comunicaciones y electronica,,, Universidad de Guadalajara)}}}
@@ -122,8 +134,8 @@ operacion; entre las tareas realizadas:
 {{{cvtag(devops)}}}
 
 ** Lenguajes
-- Javascript (ES6+)
-- Typescript
+- Typescript/Javascript (ES6+)
+- Golang
 - Bash
 - Lisp
 - Haskell
@@ -159,9 +171,9 @@ operacion; entre las tareas realizadas:
 
 ** State management :ignore:
 {{{cvevent(,State management)}}}
-- mobx  (global)
-- redux (global)
-- hooks (local/global)
+- mobx
+- redux
+- hooks
 
 ** Persistence :ignore:
 {{{cvevent(,Persistence)}}}
@@ -200,6 +212,7 @@ operacion; entre las tareas realizadas:
 {{{divider2}}}
 ** Persistence :ignore:
 {{{cvevent(,Persistence)}}}
+- PostgreSQL
 - MySQL
 - MongoDB
 ** Transport :ignore:
@@ -213,10 +226,6 @@ operacion; entre las tareas realizadas:
 ** Frameworks :ignore:
 {{{cvevent(,Frameworks)}}}
 - Express
-** Authentication :ignore:
-{{{cvevent(,Authentication)}}}
-- JWT
-- Session (PHP)
 
 \end{paracol}
 

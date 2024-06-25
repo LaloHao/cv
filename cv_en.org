@@ -23,8 +23,6 @@
 ** Personal Info :ignore:
 #+begin_export latex
 \personalinfo{%
-  \homepage{www.hao.systems}
-  \email{lalo@hao.systems}
   \email{lalohao@gmail.com}
   \phone{+523312071513}
   \location{Mazatlan, MX}
@@ -41,8 +39,21 @@
 \begin{paracol}{2}
 #+end_export
 ** Experience
-*** Servfix :ignore:
-{{{cvevent(Software engineer, Servfix, jan 2021 -- mar 2021, Mazatlan\, Sin)}}}
+*** Venafi :ignore:
+{{{cvevent(R\&D DevOps Engineer, Venafi, may 2022 -- actual, Remoto)}}}
+
+- Developed state of the art microservices and UI using Golang,
+  GraphQL, React and Kubernetes
+- Automated pipelines using Gitlab, Ansible and Terraform
+- Built integrations with AWS, GCP, Azure and CyberArk
+
+{{{cvtag(devops)}}}
+{{{cvtag(frontend)}}}
+{{{cvtag(backend)}}}
+
+{{{cvtag(kubernetes)}}}
+{{{cvtag(tls certificate management)}}}
+
 {{{divider2}}}
 
 *** Agave :ignore:
@@ -104,6 +115,7 @@ Transitioned Travis to CircleCI reducing operation costs; among performed tasks:
 ** Idioms
 {{{cvskill(Spanish, 5)}}}
 {{{cvskill(English, 4)}}}
+{{{cvskill(Japanese, 1)}}}
 
 ** Education
 {{{cvevent(Communication and electronics engineering,,, Universidad de Guadalajara)}}}
@@ -120,8 +132,8 @@ Transitioned Travis to CircleCI reducing operation costs; among performed tasks:
 {{{cvtag(devops)}}}
 
 ** Languages
-- Javascript (ES6+)
-- Typescript
+- Typescript/Javascript (ES6+)
+- Golang
 - Bash
 - Lisp
 - Haskell
@@ -141,7 +153,7 @@ Transitioned Travis to CircleCI reducing operation costs; among performed tasks:
 - react / native
 - angular
 - vue
-  
+
 ** UI/UX Design :ignore:
 {{{cvevent(,UI/UX Design)}}}
 - Sketch
@@ -157,9 +169,9 @@ Transitioned Travis to CircleCI reducing operation costs; among performed tasks:
 
 ** State management :ignore:
 {{{cvevent(,State management)}}}
-- mobx  (global)
-- redux (global)
-- hooks (local/global)
+- mobx
+- redux
+- hooks
 
 ** Persistence :ignore:
 {{{cvevent(,Persistence)}}}
@@ -198,6 +210,7 @@ Transitioned Travis to CircleCI reducing operation costs; among performed tasks:
 {{{divider2}}}
 ** Persistence :ignore:
 {{{cvevent(,Persistence)}}}
+- PostgreSQL
 - MySQL
 - MongoDB
 ** Transport :ignore:
@@ -211,10 +224,6 @@ Transitioned Travis to CircleCI reducing operation costs; among performed tasks:
 ** Frameworks :ignore:
 {{{cvevent(,Frameworks)}}}
 - Express
-** Authentication :ignore:
-{{{cvevent(,Authentication)}}}
-- JWT
-- Session (PHP)
 
 \end{paracol}
 
