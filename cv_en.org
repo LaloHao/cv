@@ -40,7 +40,7 @@
 #+end_export
 ** Experience
 *** Venafi :ignore:
-{{{cvevent(R\&D DevOps Engineer, Venafi, may 2022 -- actual, Remoto)}}}
+{{{cvevent(R\&D DevOps Engineer, Venafi, may 2022 -- current, Remote)}}}
 
 - Developed state of the art microservices and UI using Golang,
   GraphQL, React and Kubernetes
